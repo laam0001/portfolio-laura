@@ -1,0 +1,73 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import bhMobile from '../assets/images/bh-mobile.webp';
+import bhDesktop from '../assets/images/bh-desktop.webp';
+import bhPrototype from '../assets/images/bh-mockup2.webp';
+import bhPrototype2 from '../assets/images/bh-mockup.webp';
+import bhFigur from '../assets/images/bh-figur.svg';
+import bhMockup from '../assets/images/bh-Prototype.webp';
+import dsMockup2 from '../assets/images/dsPrototype2.webp';
+import dsMockup3 from '../assets/images/dsMockup2.webp';
+---
+<MainLayout title="Bauhaus">
+    <div class="lg:mx-10">
+    <article class="mt-4 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">Relesys App</h1>
+        <h2 class="text-4xl text-[#434343] uppercase lg:text-5xl">Bauhaus schweiz</h2>
+
+        <Image class="mt-10 lg:hidden" src={bhMobile} alt="Danske Spil App"></Image>
+        <Image class="mt-10 hidden lg:block" src={bhDesktop} alt="Danske Spil App"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:text-center lg:mx-72 lg:mb-26">
+            <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Projektets formål</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Bauhaus Schweiz ønskede en ny medarbejderapp, der effektivt understøtter intern kommunikation på tværs af deres afdelinger i hele landet og gør det nemmere for medarbejderne at holde sig forbundet i hverdagen.</p>
+        </div>
+
+        <Image src={bhPrototype} alt="Prototype af Danske Spil app" class="mt-10 lg:hidden"></Image>
+        <Image src={bhPrototype2} alt="Prototype af Danske Spil app" class="mt-10 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Processen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Som en del af et tværfagligt team i Relesys, arbejdede jeg med at designe og udvikle en skræddersyet medarbejderapp til Bauhaus Schweiz. Min proces er baseret på mockups i Figma og med efterfølgende implementering i Relesys-portalen.</p>
+
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Kompetencer i spil</h3>
+            <ol class="px-4 mt-4 list-disc">
+                <li class="text-[#76726D] text-[16px] lg:text-[18px]"><span class="text-[#3F4345]">UX/UI-design</span> Udvikling af brugervenlige skitser og mockups i Figma med fokus på visuel identitet og brugerrejse.</li>
+              
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">Designsystem og variabler</span> Brug af booleans og komponentstruktur til fleksibel prototyping og præsentation.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">Kodning og styling:</span> Opsætning og implementering i Relesys-portalen, inkl. HTML/CSS og brug af variabler i :root.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">Projekt- og feedbackhåndtering</span> Iterativt arbejde med feedback fra kunde og kollegaer – og oversættelse af ønsker til konkrete løsninger.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">Internationalisering</span> darbejdelse af sprogversioner (DE/FR) og native assets til App Store og Google Play.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 mb-10 lg:text-[18px]"><span class="text-[#3F4345]">Tværfagligt samarbejde:</span> Samarbejde med implementation, design og salgsteam for at sikre en sammenhængende leverance.</li>
+            </ol>
+        </div>
+
+        <div>
+            <Image src={bhFigur} alt="Brugerrejse" class="lg:mt-24"></Image>
+        </div>
+    </article>
+
+    <article class="">
+        <div class="mt-10 -mx-10 lg:mt-0">
+            <Image src={bhMockup} alt="Mockup af app"class=""></Image>
+        </div>
+    </article>
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>

@@ -1,0 +1,68 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import itMobile from '../assets/images/it-mobile.webp';
+import itDesktop from '../assets/images/it-desktop.webp';
+import itPrototype from '../assets/images/it-mockup2.webp';
+import itPrototype2 from '../assets/images/it-mockup.webp';
+import itFigur from '../assets/images/it-figur.webp';
+import itMockup from '../assets/images/it-Prototype.webp';
+import itMockup2 from '../assets/images/it-Prototype2.webp';
+---
+
+<MainLayout title="Sac-It">
+    <div class="lg:mx-10">
+    <article class="mt-4 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">Sac-It</h1>
+        <h2 class="text-4xl text-[#434343] uppercase lg:text-5xl">Redesign af website</h2>
+
+        <Image class="mt-10 lg:hidden" src={itMobile} alt="Sac-it hjemmeside"></Image>
+        <Image class="mt-10 hidden lg:block" src={itDesktop} alt="Sac-it hjemmeside"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:text-center lg:mx-72 lg:mb-26">
+            <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Projektets formål</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Formålet med projektet var at redesigne Sac-it´s hjemmeside så den blev mere overskuelig, brugervenlig og sammenhængende. </p>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">Den gamle side var rodet og ustruktureret, hvilket gjorde det svært for brugerne at navigere. Målet var en enkel og intuitiv digital oplevelse. </p>
+        </div>
+
+        <Image src={itPrototype} alt="Prototype af Sac-it hjemmeside" class="mt-10 lg:hidden"></Image>
+        <Image src={itPrototype2} alt="Prototype af Sac-it hjemmeside" class="mt-10 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Løsningen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Den nye hjemmeside er designet med brugervenlighed og tilgængelighed i fokus.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Strukturen er enkel og intuitiv, så selv brugere uden teknisk baggrund hurtigt forstår, hvad Sac-it tilbyder.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Løsningen er udviklet i dark mode for at understøtte Sac-it’s ønske om at signalere bæredygtighed, uden at gå på kompromis med brandidentiteten.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Den mørkeblå farvepalette skaber både genkendelighed og et professionelt udtryk, der understøtter virksomhedens IT-profil.</p>
+        </div>
+
+        <div>
+            <Image src={itFigur} alt="Brugerrejse" class="mt-4 lg:mt-0"></Image>
+        </div>
+    </article>
+
+    <article class="">
+        <div class="mt-10 -mx-10 lg:mt-20">
+            <Image src={itMockup} alt="Mockup af Sac-it hjemmeside"class="lg:w-[1300px] lg:mx-10"></Image>
+            <Image src={itMockup2} alt="Mockup af Sac-it hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
+        </div>
+
+        <h4 class="text-lg mt-10 text-center lg:text-2xl lg:mt-20">Se hjemmeside her:</h4>
+        <a class="text-[#76726D] flex justify-center lg:pb-20 lg:text-lg" href="https://www.sac-it.dk/?gad_source=1&gad_campaignid=389450540&gbraid=0AAAAAD2XaTBbgx2BEDiGtRi-wrTdn8Js1&gclid=Cj0KCQjwn8XFBhCxARIsAMyH8BvJef0DLuDH_RYBlbKH5QWRRguAi-1-xTjXLIFp2k8MRD5vuse_OC8aAj_PEALw_wcB">https://www.sac-it.dk/</a>
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>

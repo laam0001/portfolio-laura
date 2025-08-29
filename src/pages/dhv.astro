@@ -1,0 +1,100 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import dhvMobile from '../assets/images/dhv-mobile.webp';
+import dhvDesktop from '../assets/images/dhv-desktop.webp';
+import dhvPrototype from '../assets/images/dhv-mockup2.webp';
+import dhvPrototype2 from '../assets/images/dhv-mockup.webp';
+import dhvFigur from '../assets/images/dhv-figur.svg';
+import dhvFigur2 from '../assets/images/dhv-figur2.svg';
+import dhvMockup from '../assets/images/dhv-Prototype.webp';
+import dsMockup2 from '../assets/images/dsPrototype2.webp';
+import dsMockup3 from '../assets/images/dsMockup2.webp';
+---
+<MainLayout title="Dansk Hestevæddeløbe">
+    <div class="lg:mx-10">
+    <article class="mt-4 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">Dansk Hestevæddeløb</h1>
+        <h2 class="text-3xl text-[#434343] uppercase lg:text-5xl">Kampagnesite <span class="text-[16px] lg:text-2xl">- Eksamensprojekt MMD</span></h2>
+
+        <Image class="mt-10 lg:hidden" src={dhvMobile} alt="Dansk Hestevæddeløb kampagnesite"></Image>
+        <Image class="mt-10 hidden lg:block" src={dhvDesktop} alt="Dansk Hestevæddeløb kampagnesite"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:text-center lg:mx-72 lg:mb-26">
+            <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Projektets formål</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">At udvikle en digital kampagneplatform for Dansk Hestevæddeløb, der skulle engagere unge (15–30 år) og gøre sporten mere relevant og tilgængelig for en ny generation. </p>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">Projektet tog afsæt i en forældet digital tilstedeværelse og et behov for at modernisere sportens image.</p>
+        </div>
+
+        <Image src={dhvPrototype} alt="Prototype af Dansk Hestevæddeløb kampagnesite" class="mt-10 lg:hidden"></Image>
+        <Image src={dhvPrototype2} alt="Prototype af Dansk Hestevæddeløb kampagnesite" class="mt-10 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Løsningen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Vi udviklede en interaktiv webfeature som kampagnesite – målrettet unge mellem 15–30 år. </p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Løsningen kombinerer visuel storytelling, animationer, lyd og scrollytelling for at formidle hestevæddeløbssportens fællesskab, kultur og oplevelsesværdi på en nutidig og sanselig måde.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Kampagnesiden tager brugeren med på en rejse gennem sportens historie og sociale betydning, fra de royale rødder til nutidens begivenheder. Fortællingen formidles i korte, engagerende bidder og understøttes af illustrationer, video og lyddesign.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Siden er bygget efter mobile-first-principper og optimeret til den unge målgruppes medievaner. Gennem brug af persuasivt design og interaktive elementer inviteres brugeren til at tage del i fællesskabet og opleve sporten som noget levende og inkluderende.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Målet var ikke kun at informere, men at aktivere og engagere, så brugeren føler sig som en del af noget større, og måske endda køber billet til et løb.</p>
+        </div>
+
+        <div>
+            <Image src={dhvFigur} alt="illustration" class="mt-10 lg:mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="lg:mt-36 lg:grid lg:grid-cols-2 lg:gap-22">
+        <div class="lg:order-1">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Udviklingsprocessen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">VProjektet fulgte en Design Thinking-inspireret proces opdelt i 7 sprints:</p>
+            <ol class="px-4 mt-4">
+                <li class="text-[#76726D] text-[16px] lg:text-[18px]"><span class="text-[#3F4345]">1. Empathize:</span> Desk- og field research, interviews og brugertests afdækkede unge brugeres behov og oplevelser med DHVs nuværende site.</li>
+              
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">2. Define:</span> Målgruppen blev tydeligt defineret og problemstillingen præciseret gennem Value Proposition Canvas og værditrappen.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">3. Ideate:</span> Idégenerering og storyboard udviklede grundfortællingen og visuelle retning.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">4. Prototype:</span>  Der blev produceret en high-fidelity prototype med scrollytelling, animationer og lyd.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">5. Test:</span> Tænke-højt-test og brugertests gav indsigt i interaktion og oplevelse.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">6. Implement:</span> Udvikling med Tailwind, Figma og Lottie-animationer.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">7. Learn:</span>Evaluering og opsamling på feedback til videreudvikling</li>
+            </ol>
+        </div>
+
+        <div>
+            <Image src={dhvFigur2} alt="Design Thinking" class="mt-10 lg:mt-48"></Image>
+        </div>
+    </article>
+
+
+
+    <article class="">
+        <div class="mt-10 -mx-10 lg:mt-0">
+            <Image src={dhvMockup} alt="Mockup af Dansk Hestevæddeløb kampagnesite"class=""></Image>
+        </div>
+    </article>
+
+    <h4 class="text-lg text-center lg:text-2xl lg:-mt-20">Se hjemmeside her:</h4>
+    <a class="text-[#76726D] flex justify-center lg:pb-20 lg:text-lg" href="https://danskhv.netlify.app/">https://danskhv.netlify.app/</a>
+
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>

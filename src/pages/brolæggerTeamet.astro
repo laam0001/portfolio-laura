@@ -1,0 +1,70 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import btMobile from '../assets/images/bt-mobile.webp';
+import btDesktop from '../assets/images/bt-desktop.webp';
+import btPrototype from '../assets/images/bt-mockup2.webp';
+import btPrototype2 from '../assets/images/bt-mockup.webp';
+import btFigur from '../assets/images/bt-figur.svg';
+import btMockup from '../assets/images/bt-Prototype.webp';
+import btMockup2 from '../assets/images/bt-Prototype2.webp';
+---
+
+<MainLayout title="BrlæggerTeamet">
+    <div class="lg:mx-10">
+    <article class="mt-4 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">Brolæggerteamet</h1>
+        <h2 class="text-4xl text-[#434343] uppercase lg:text-5xl">Udvikling af hjemmeside</h2>
+
+        <Image class="mt-10 lg:hidden" src={btMobile} alt="Brolæggerteamet hjemmeside"></Image>
+        <Image class="mt-10 hidden lg:block" src={btDesktop} alt="Brolæggerteamet hjemmeside"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:text-center lg:mx-72 lg:mb-26">
+            <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Projektets formål</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Formålet var at skabe en enkel og troværdig online tilstedeværelse for Brolæggerteamet.</p>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">De havde brug for en hjemmeside, der kort og præcist formidler deres ydelser og faglighed, på en måde, der er let at finde, nem at forstå og tilgængelig for alle.</p>
+        </div>
+
+        <Image src={btPrototype} alt="Prototype af Brolæggerteamet hjemmeside" class="mt-10 lg:hidden"></Image>
+        <Image src={btPrototype2} alt="Prototype af Brolæggerteamet hjemmeside" class="mt-10 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Løsningen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Hjemmesiden er designet med udgangspunkt i en vision om tilgængelighed og enkelhed.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Layout og navigation er gjort så overskuelig som muligt, så både nye og eksisterende kunder hurtigt får indblik i, hvem Brolæggerteamet er, og hvad de tilbyder.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Den jordnære farvepalette skaber en visuel kobling til brolæggerfaget og understøtter den håndværksmæssige identitet.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Som en del af løsningen har jeg, i samarbejde med Brolæggerteamet, udviklet en enkel grafik, der symboliserer deres arbejde og visuelle udtryk.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Målet har været at skabe en hjemmeside, der formidler faglighed, troværdighed og lokal forankring på en ærlig og brugervenlig måde.</p>
+        </div>
+
+        <div>
+            <Image src={btFigur} alt="logo figur" class="mt-10 lg:mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="">
+        <div class="mt-20 -mx-10 lg:mt-32">
+            <Image src={btMockup} alt="Mockup af Sac-it hjemmeside"class="lg:w-[1300px] lg:mx-10"></Image>
+            <Image src={btMockup2} alt="Mockup af Sac-it hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
+        </div>
+
+        <h4 class="text-lg mt-0 text-center lg:text-2xl">Se hjemmeside her:</h4>
+        <a class="text-[#76726D] flex justify-center lg:pb-20 lg:text-lg" href="https://www.brolaegger-teamet.dk/">https://www.brolaegger-teamet.dk</a>
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
