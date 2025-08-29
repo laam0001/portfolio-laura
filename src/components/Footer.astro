@@ -1,6 +1,32 @@
 ---
+import { Image } from 'astro:assets';
+import linkedin from './public/linkedin.svg';
+import copyright from './public/copyright.svg';
+import garden from './public/garden2.svg';
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+<article id="sektion4" class="bg-[#625821] text-[#F3F0EA] px-[50px] py-10 mt-40 lg:mt-32">
+    <Image src={garden} alt="pige slår græs" class="-mt-42 w-52 lg:w-74 lg:-mt-56"></Image>
+
+    <div class="grid grid-cols-2">
+    <div>
+        <div>
+            <h5 class="text-md lg:text-xl">Kontakt:</h5>
+        </div>
+
+        <div class="text-[14px] grid grid-cols-2 gap-0 lg:text-[18px]">
+            <Image src={linkedin} alt="LinkedIn Ikon"></Image>
+            <a href="www.linkedin.com/in/laura-amelung-869785249" class="absolute left-20">LinkedIn</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="grid grid-cols-3 text-[14px] lg:text-[16px]">
+            <p class="absolute right-[100px]">Copyright</p>
+            <Image src={copyright} alt="copyright" class="absolute right-[80px]"></Image>
+            <p class="absolute right-[50px] lg:right-[45px]">2025</p>
+        </div>
+
+        <p class="pt-[20px] text-[12px] absolute right-[60px] lg:text-[14px]">Laura Amelung</p>
+    </div>
+    </div>
+</article>

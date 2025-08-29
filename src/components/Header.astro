@@ -1,5 +1,73 @@
 ---
+import { Image } from 'astro:assets';
+import home from './public/home.svg'
 ---
-<div>
-Header - tilføj navigation mm.
-</div>
+
+<div x-data="{ showmenu: false }" class="">
+    <div id="navbar" class="">
+      <nav id="desktopmenu" class="hidden lg:block">
+        <ul class="flex flex-row justify-between py-[10px] text-[18px]">
+            <li>
+            <a href="/"> <Image src={home} alt="home-button"></Image></a>
+          </li>
+          <div class="flex gap-[100px] py-[70px]">
+          <li
+            class="text-[#625821] hover:underline decoration-solid"
+          >
+            <a href="#sektion2">Hvem er jeg?</a>
+          </li>
+          <li
+            class="text-[#625821] hover:underline decoration-solid"
+          >
+            <a href="#sektion3">Mine projekter</a>
+          </li>
+          <li
+            class="text-[#625821] hover:underline decoration-solid"
+          >
+            <a href="#sektion4">Kontakt</a>
+          </li>
+        </div>
+        </ul>
+      </nav>
+
+      <div class="flex justify-end">
+      <button
+        id="burgermenu"
+        class="lg:hidden pt-10 text-[#625821] font-semibold uppercase "
+        x-on:click="showmenu = ! showmenu">Menu</button
+      >
+    </div>
+    </div>
+    <nav
+      id="mobilmenu"
+      class="flex flex-col pt-5"
+      x-show="showmenu"
+      x-transition
+      x-on:click="showmenu = false"
+      x-on:click.outside="showmenu = false"
+    >
+      <ul>
+        <li class="w-22 ml-24 mb-4">
+          <a href="/"> <Image src={home} alt="home-button"></Image></a>
+        </li>
+
+        <li
+          class="text-[#625821] text-center py-4 hover:underline decoration-solid"
+        >
+          <a href="#sektion2">Hvem er jeg?</a>
+        </li>
+        <li
+          class="text-[#625821] text-center py-4 hover:underline decoration-solid"
+        >
+          <a href="#sektion3">Mine projekter</a>
+        </li>
+        <li
+          class="text-[#625821] text-center py-4 hover:underline decoration-solid"
+        >
+          <a href="#sektion4">Kontakt</a>
+        </li>
+     
+         
+      </ul>
+    </nav>
+  </div>

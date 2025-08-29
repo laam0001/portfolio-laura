@@ -1,0 +1,97 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import dsMobile from '../assets/images/ds-mobile.webp';
+import dsDesktop from '../assets/images/ds-desktop.webp';
+import dsPrototype from '../assets/images/ds-mobile2.webp';
+import dsPrototype2 from '../assets/images/ds-desktop2.webp';
+import dsFigur from '../assets/images/ds-figur.svg';
+import dsFigur2 from '../assets/images/ds-figur2.svg';
+import dsMockup from '../assets/images/dsPrototype.webp';
+import dsMockup2 from '../assets/images/dsPrototype2.webp';
+import dsMockup3 from '../assets/images/dsMockup2.webp';
+---
+<MainLayout title="NoA Ignite x Danske Spil">
+    <div class="lg:mx-10">
+    <article class="mt-4 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">KEA</h1>
+        <h2 class="text-4xl text-[#434343] uppercase lg:text-5xl">NoA Ignite <span class="text-[16px] lg:text-2xl">x</span>  Danske Spil</h2>
+
+        <Image class="mt-10 lg:hidden" src={dsMobile} alt="Danske Spil App"></Image>
+        <Image class="mt-10 hidden lg:block" src={dsDesktop} alt="Danske Spil App"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-28">
+            <div>
+                <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Konceptets formål</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Danske Spil ønskede at fremme en sundere spillekultur blandt unge (18–24 år), særligt mænd, der er mest aktive på sportsbetting-platforme.</p>
+                <p class="text-[#76726D] mt-4 lg:text-[18px]">Vores koncept gør ansvarlighed til en integreret og intuitiv del af Oddset-appen, uden at fjerne det sjove ved at spille.</p>
+            </div>
+
+            <div>
+                <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Problemformulering</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:mb-26 lg:text-[18px]">Hvordan kan Danske Spil påvirke unges spilleadfærd gennem målrettede tiltag på deres online platforme for at forebygge afhængighed og skabe en sundere spillekultur?</p>
+            </div>
+        </div>
+
+        <Image src={dsPrototype} alt="Prototype af Danske Spil app" class="mt-10 lg:hidden"></Image>
+        <Image src={dsPrototype2} alt="Prototype af Danske Spil app" class="mt-10 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-26">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Konceptets kerneidé</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Vi designede en løsning, der kombinerer AI, nudging og visuel feedback for at styrke unges bevidsthed om deres spilvaner.</p>
+
+            <h4 class="text-[#9ca0a2] text-[18px] mt-4 lg:text-[22px]">Konceptet består af to hovedfunktioner:</h4>
+            <h5 class="text-[#3F4345] text-[16px] mt-2 lg:text-[18px]">Personlig spilleprofil</h5>
+            <p class="text-[#76726D] lg:text-[18px]">Nye brugere svarer på fire spørgsmål, der danner grundlag for en risikovurdering og personlige grænser.</p>
+
+            <h5 class="text-[#3F4345] text-[16px] lg:text-[18px] mt-4">Live spilstatus</h5>
+            <p class="text-[#76726D] lg:text-[18px]">Et ikon skifter farve (grøn/gul/rød) afhængig af brugerens aktuelle spiladfærd i forhold til egne grænser. Brugeren bevarer valgfriheden, men får løbende feedback.</p>
+        </div>
+
+        <div>
+            <Image src={dsFigur} alt="Brugerrejse"></Image>
+        </div>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22">
+        <div class="lg:order-1">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Udviklingsprocessen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Vi arbejdede med Double Diamond-modellen og gennemførte en Design Sprint med fokus på brugerindsigt og iterative prototyper:</p>
+            <ol class="px-4 mt-4">
+                <li class="text-[#76726D] text-[16px] lg:text-[18px]"><span class="text-[#3F4345]">1. Discover:</span> Desk research, kvalitative interviews, trendresearch og spørgeskemaanalyse gav os dyb indsigt i målgruppen.</li>
+              
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">2. Define:</span> Vi formulerede en skarp problemstilling og kortlagde centrale brugerbehov.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">3. Develop:</span> Gennem idéudvikling og skitser blev det første prototypekoncept skabt.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">4. Deliver:</span> Prototypen blev testet, justeret og valideret gennem brugertests.</li>
+            </ol>
+        </div>
+
+        <div>
+            <Image src={dsFigur2} alt="Double Diamond" class="mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="">
+        <h3 class="text-[#3F4345] text-2xl mt-20 lg:mt-32 lg:text-[32px] bebas-neue-regular lg:uppercase">Dine valg. Din grænse. Dit spil</h3>
+        <div class="">
+            <Image src={dsMockup} alt="Mockup af app"class="lg:hidden"></Image>
+            <Image src={dsMockup2} alt="Mockup af app" class="lg:hidden"></Image>
+            <Image src={dsMockup3} alt="Mockup af app" class="hidden lg:block lg:mx-0"></Image>
+        </div>
+    </article>
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>

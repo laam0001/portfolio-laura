@@ -12,14 +12,19 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
-	</head>
-	<body>
 
-		<header>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="bg-[#F3F0EA] font-['DIN_Alternate']">
+
+		<header class="mx-[50px]">
 			<Header></Header>
 		</header>
 		
-		<main>
+		<main class="mx-[50px]">
 			<slot />
 		</main>
 

@@ -1,0 +1,99 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import gtMobile from '../assets/images/gt-mobile.webp';
+import gtDesktop from '../assets/images/gt-desktop.webp';
+import gtPrototype from '../assets/images/gt-mockup2.webp';
+import gtPrototype2 from '../assets/images/gt-mockup.webp';
+import gtFigur from '../assets/images/gt-figur.svg';
+import gtFigur2 from '../assets/images/gt-figur2.svg';
+import gtMockup from '../assets/images/gt-Prototype.webp';
+---
+<MainLayout title="NoA Ignite x Danske Spil">
+    <div class="lg:mx-10">
+    <article class="mt-4 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">KEA</h1>
+        <h2 class="text-4xl text-[#434343] uppercase lg:text-5xl">GirlTalk</h2>
+
+        <Image class="mt-10 lg:hidden" src={gtMobile} alt="GirlTalk App"></Image>
+        <Image class="mt-10 hidden lg:block" src={gtDesktop} alt="GirlTalk App"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-28">
+            <div>
+                <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Konceptets formål</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Formålet med projektet var at udvikle et digitalt koncept, der gentænker og styrker sammenhængen mellem GirlTalks rådgivning og øvrige kommunikation.</p>
+                <p class="text-[#76726D] mt-4 lg:text-[18px]">Fokus var at skabe en mere fleksibel, relevant og brugervenlig rådgivningsoplevelse, der samler organisationens platforme i én sammenhængende digital rejse – og møder brugerne på deres egne præmisser, både i og uden for rådgivningens åbningstid.</p>
+            </div>
+
+            <div>
+                <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Problemformulering</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:mb-26 lg:text-[18px]">Hvordan kan GirlTalk udvikle en digital brugerrejse, der forbinder rådgivning og kommunikation på tværs af platforme, for at imødekomme unge pigers behov for tryg, tilgængelig støtte?</p>
+            </div>
+        </div>
+
+        <Image src={gtPrototype} alt="Mockup af GirlTalk app" class="mt-10 lg:hidden"></Image>
+        <Image src={gtPrototype2} alt="Mockup af GirlTalk app" class="mt-26 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-26">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Konceptet - Gerda GirlBot</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Vi udviklede en app, der samler GirlTalks rådgivning, brevkasse, podcasts og indhold i én samlet digital platform. Kernen i konceptet er Gerda GirlBot, en empatisk AI-chatbot, som støtter brugerne, når den menneskelige rådgivning er lukket.</p>
+
+            <h4 class="text-[#3F4345] text-[16px] mt-6 lg:text-[18px]">Gerda fungerer som en digital receptionist:</h4>
+
+            <ul class="text-[#76726D] lg:text-[18px] list-disc mx-4 mt-4">
+                <li>Hun møder brugeren med omsorg og anerkendelse</li>
+                <li class="mt-4">Hun henviser til relevante formater som podcasts og brevkassesvar</li>
+                <li class="mt-4">Ved alvorlige emner guider hun videre til eksterne hjælpetilbud som fx BørneTelefonen</li>
+            </ul>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Gerda er ikke en erstatning, men et supplement til ung-til-ung rådgivningen, designet til at give støtte i nuet og sikre, at brugeren aldrig står alene.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Hun er promptet til at kommunikere i øjenhøjde og skabe en oplevelse af tryghed og tilgængelighed, i tråd med GirlTalks værdier.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Konceptet gør det muligt for GirlTalk at være til stede digitalt hele døgnet og skaber en rød tråd mellem deres indsatser, med respekt for både brugernes følelser, adfærd og medievaner.</p>
+        </div>
+
+        <div>
+            <Image src={gtFigur} alt="Brugerrejse"></Image>
+        </div>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22">
+        <div class="lg:order-1">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Udviklingsprocessen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Vi arbejdede med Double Diamond-modellen og gennemførte en Design Sprint med fokus på brugerindsigt og iterative prototyper:</p>
+            <ol class="px-4 mt-4">
+                <li class="text-[#76726D] text-[16px] lg:text-[18px]"><span class="text-[#3F4345]">1. Discover:</span> Research og interviews afdækkede behov for anonymitet, genkendelighed og fleksibilitet.</li>
+              
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">2. Define:</span> Brugerrejse og barrierer blev kortlagt: lavt kendskab, utydelig kommunikation og manglende sammenhæng.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">3. Develop:</span> Udvikling af app med chat, brevkasse og Gerda GirlBot. Fokus på tryghed, enkelhed og målgruppevisuelt.</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">4. Deliver:</span> Brugertest gav input til forbedringer: tydeligere adskillelse mellem AI og rådgivning, bedre navigation og nyt navn til chatbotten.</li>
+            </ol>
+        </div>
+
+        <div>
+            <Image src={gtFigur2} alt="Double Diamond" class="mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="">
+        <div class="mt-10">
+            <Image src={gtMockup} alt="Mockup af app"class=""></Image>
+        </div>
+    </article>
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
