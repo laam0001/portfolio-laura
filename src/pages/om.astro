@@ -1,0 +1,55 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import laura from "/public/laura.webp";
+---
+
+<MainLayout title="Hvem er jeg?">
+
+<article id="sektion2">
+    <div class="lg:grid lg:grid-cols-2 lg:mx-10 lg:gap-44">
+
+        <div class="">
+            <h3 class="pt-20 pb-4 text-3xl text-[#434343] lg:pt-0">Jeg er Laura Amelung</h3>
+
+            <div class="py-4 text-[16px] text-[#5D5C5B] lg:text-[18px]">
+                <p class="pb-8">Jeg er uddannet multimediedesigner og er i gang med at færdiggøre min PBA i digital konceptudvikling. Jeg arbejder med at udvikle digitale løsninger og websites, der skaber værdi for både brugeren og forretningen.</p>
+
+                <p class="pb-8">Jeg motiveres af at forstå mennesker og deres behov og omsætte denne indsigt til løsninger, der er intuitive, æstetiske og meningsfulde. Samtidig har jeg et strategisk blik på, hvordan løsninger kan fungere i praksis og skabe værdi på længere sigt.</p>
+
+                <p class="pb-8">Jeg arbejder i spændet mellem analyse og idéudvikling og trives med at gøre komplekse problemstillinger enkle. Jeg er til det enkle og rene udtryk, men kan godt lide at tilføre små detaljer, farver eller overraskelser, når det giver mening og løfter oplevelsen.</p>
+
+                <p class="pb-8">Min baggrund fra European Film College har givet mig en stærk forståelse for visuel fortælling og dramaturgi, som jeg bruger i mit arbejde med brugeroplevelser.</p>
+
+                <p>For mig handler godt design ikke kun om funktion, men om at skabe løsninger, der føles rigtige, skaber værdi og efterlader et indtryk hos dem, de er designet til.</p>
+            </div>
+        </div>
+    
+
+        <div class="pt-10 lg:pt-16 lg:w-auto lg:mb-26"> 
+            <Image src={laura} alt="Laura" class=""></Image>
+        </div>
+    </div>
+
+     <div class="text-[16px] text-[#5D5C5B] lg:mx-10">
+        <h2 class="pt-20 pb-4 text-xl text-[#434343] lg:pt-0">Kompetencer</h3>
+
+            <div class="lg:grid lg:grid-cols-2 max-w-[580px]">
+            <li class="ml-6">Digital konceptudvikling</li>
+            <li class="ml-6">UX & brugercentreret design</li>
+            <li class="ml-6">Research & brugerindsigt</li>
+            <li class="ml-6">Webdesign & digitale løsninger</li>
+            <li class="ml-6">Visuel identitet</li>
+            <li class="ml-6">Strategi & forretningsforståelse</li>
+            <li class="ml-6">CRO & konverteringsoptimering</li>
+            <li class="ml-6">Marketing automation</li>
+            <li class="ml-6 mb-20">Bæredygtigt og cirkulært design</li>
+        </div>
+     </div>
+
+        <div class="pt-10 lg:pt-32 lg:mx-40 hidden"> <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player src="https://lottie.host/4b13c983-0041-44e3-a6d3-2f2c5776d753/DqybsgxtD7.json" background="transparent" speed="1" class="w-[300px] h-[300px] lg:w-[450px] lg:h-[450px]" loop autoplay></dotlottie-player> </div>
+    </div>
+
+
+</article>
+</MainLayout>
