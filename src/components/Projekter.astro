@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import SkabtAfMig from '/public/SkabtMobile.webp';
 import danskeSpil from '/public/danskeSpil.webp';
 import girlTalk from '/public/girlTalk.webp';
 import bauhaus from '/public/bauhaus.webp';
@@ -9,6 +10,16 @@ import dhv from '/public/dhv.webp';
 ---
 
 <div class="relative">
+    <a href="/skabtAfMig">
+        <Image src={SkabtAfMig} alt="Mockup af Skabt af MIG hjemmeside" class="lg:h-[470px]"></Image> 
+        <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[162px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">
+            <h4 class="text-[22px] lg:text-3xl">Skabt af MIG</h4>
+            <p class="text-[16px] lg:text-xl">Kea</p>
+        </div>
+    </a>
+</div>
+
+<div class="relative mt-10 lg:mt-0 lg:h-[464px]">
     <a href="/danskeSpil">
         <Image src={danskeSpil} alt="Mockup af Danske Spil app" class="lg:h-[470px]"></Image> 
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[162px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">

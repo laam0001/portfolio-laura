@@ -1,0 +1,99 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import skabtMobile from '/public/SkabtMobile.webp';
+import skabtDesktop from '/public/SkabtDesktop.webp';
+import SkabtMockup1 from '/public/SkabtMockup-Desktop.webp';
+import SkabtMockup2 from '/public/SkabtMockup-Mobile.webp';
+import SkabtMoodboard from '/public/Skabt-moodboard.webp';
+import SkabtCRO from '/public/Skabt-CRO.webp';
+import skabtPrototype1 from '/public/SkabtPrototype1.webp';
+import skabtPrototype2 from '/public/SkabtPrototype2.webp';
+import skabtPrototype3 from '/public/SkabtPrototype3.webp';
+import skabtPrototype4 from '/public/SkabtPrototype4.webp';
+import skabtPrototype5 from '/public/SkabtPrototype5.webp';
+
+---
+<MainLayout title="GirlTalk">
+    <div class="lg:mx-10">
+    <article class="mt-20 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">KEA</h1>
+        <h2 class="text-4xl text-[#434343] uppercase lg:text-5xl">Skabt af MIG</h2>
+
+        <Image class="mt-10 lg:hidden" src={skabtMobile} alt="Skabt af Mig hjemmeside"></Image>
+        <Image class="mt-10 hidden lg:block" src={skabtDesktop} alt="Skabt af Mig hjemmeside"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-28">
+            <div>
+                <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Konceptets formål</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">FFormålet med Skabt af MIG er at skabe en webshop, der ikke blot sælger produkter, men aktivt arbejder med konvertering gennem en tryg, æstetisk og troværdig brugeroplevelse.</p>
+                <p class="text-[#76726D] mt-4 lg:text-[18px]">Webshoppen er designet med fokus på at reducere friktion i købsrejsen og understøtte brugerens beslutning gennem persuasive elementer og klare værdibudskaber.</p>
+            </div>
+
+            <div>
+                <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Problemformulering</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:mb-26 lg:text-[18px]">Hvordan kan jeg designe en webshop, der kombinerer håndlavet autenticitet med effektive CRO-principper, så brugeren oplever tryghed og motiveres til køb?</p>
+            </div>
+        </div>
+
+        <Image src={SkabtMockup2} alt="Mockup af Skabt af mig hjemmeside" class="mt-10 lg:hidden"></Image>
+        <Image src={SkabtMockup1} alt="Mockup af Skabt af mig hjemmeside" class="mt-26 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-26">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Forretningside</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Skabt af MIG er en webshop, der sælger håndlavede hæklede produkter med fokus på kvalitet, bæredygtighed og personlighed.</p>
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Sortimentet består af børneprodukter som hæklede tøjdyr samt produkter til mødre såsom net, kosmetikpunge og accessories.</p>
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Webshoppen formidler en hjemlig og tryg oplevelse med udgangspunkt i fortællingen “Fra mine hænder til dit hjem”.</p>
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px] mb-10">Målgruppen er primært mødre i alderen 25–40 år, som værdsætter unikke, håndlavede produkter frem for masseproduktion. De søger autenticitet, kvalitet og produkter med sjæl og inspireres af kreative universer, slow living og nordisk æstetik.</p>
+        </div>
+
+        <div>
+            <Image src={SkabtMoodboard} alt="Moodboard" class="lg:mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22">
+        <div class="lg:order-1">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">CRO og 4 Basics</h3>
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Webshoppen er udviklet med fokus på CRO og en tryg købsoplevelse gennem tydelig navigation, klare værdibudskaber og brug af call-to-actions. Designet understøtter brugerens beslutningsproces og reducerer usikkerhed.</p>
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Ser man på webshoppen ud fra de fire centrale e-commerce parametre, fremgår følgende:</p>
+            <ol class="px-4 mt-4">
+                <li class="text-[#76726D] text-[16px] lg:text-[18px]"><span class="text-[#3F4345]">1. Trafik:</span> SEO-optimerede sider, men ingen aktiv SoMe eller betalt annoncering</li>
+              
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">2. Konvertering:</span> Tydelig struktur og værdiløfte, men mangler anmeldelser og flere betalingsmuligheder</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">3. AOV:</span> Rabatter, gratis fragt og cross-/upsell øger kurvstørrelsen</li>
+
+                <li class="text-[#76726D] text-[16px] mt-4 lg:text-[18px]"><span class="text-[#3F4345]">4. Loyalitet:</span> Kundeklub og nyhedsbrev, men uden automatisering og integrationer</li>
+            </ol>
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Webshoppen fungerer som et solidt fundament med potentiale for videre optimering af trafik og loyalitet.</p>
+        </div>
+
+        <div>
+            <Image src={SkabtCRO} alt="Værelse med sangkuffert på gulvet" class="mt-10 mb-20 lg:mb-30"></Image>
+        </div>
+    </article>
+
+    <article class="">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px] text-center">Hjemmesiden</h3>
+        <div class="mt-6 -mx-10 lg:mt-10">
+            <Image src={skabtPrototype1} alt="Mockup af Skabt af MIG hjemmeside"class="lg:w-[1300px] lg:mx-10"></Image>
+            <Image src={skabtPrototype2} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
+            <Image src={skabtPrototype3} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
+            <Image src={skabtPrototype4} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
+            <Image src={skabtPrototype5} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20 lg:pb-30"></Image>
+        </div>
+    </article>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
