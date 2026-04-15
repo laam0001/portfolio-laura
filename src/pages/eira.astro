@@ -1,0 +1,94 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import eiraMobile from '/public/Eira-mobile.webp';
+import eiraDesktop from '/public/Eira-desktop.webp';
+import eiraMockup1 from '/public/EiraMockup-mobile.webp';
+import eiraMockup2 from '/public/EiraMockup-desktop.webp';
+import eiraFigur1 from '/public/Eira-figur1.svg';
+import eiraFigur2 from '/public/Eira-figur2.svg';
+import eiraPrototype1 from '/public/Eira-prototype1.webp';
+import eiraPrototype2 from '/public/Eira-prototype2.webp';
+import eiraPrototype3 from '/public/Eira-prototype3.webp';
+---
+<MainLayout title="Dansk Hestevæddeløbe">
+    <div class="lg:mx-10">
+    <article class="mt-20 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">KEA</h1>
+        <h2 class="text-3xl text-[#434343] uppercase lg:text-5xl">Eira Armbånd</h2>
+
+        <Image class="mt-10 lg:hidden" src={eiraMobile} alt="Eira armbånd koncept"></Image>
+        <Image class="mt-10 hidden lg:block" src={eiraDesktop} alt="Eira armbånd koncept"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:text-center lg:mx-72 lg:mb-26">
+            <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Projektets formål</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Formålet med projektet er at udvikle en løsning, der hjælper brugere med at hente deres medicin i tide gennem en rolig og sanselig påmindelse.</p>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">Projektet tager udgangspunkt i et vigtigt sundhedsproblem og undersøger, hvordan man kan reducere digital støj og skabe en mere menneskelig brugeroplevelse.</p>
+        </div>
+
+        <Image src={eiraMockup1} alt="Mockup af Eira armbånd koncept" class="mt-10 lg:hidden"></Image>
+        <Image src={eiraMockup2} alt="Mockup af Eira armbånd koncept" class="mt-10 hidden lg:block lg:mb-26"></Image>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Løsningen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Eira armbånd er et intelligent og æstetisk smykke, skabt til at hjælpe dig med at huske at hente din medicin, når du mangler.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Et smykke, der forener teknologi og omsorg, og skaber ro midt i hverdagens travlhed.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Løsningen integreres via apotekets app, hvor brugeren aktiverer funktionen, hvorefter armbåndet vibrerer diskret, når man er i nærheden af et apotek. Systemet suppleres med en backup-påmindelse og mulighed for at involvere pårørende.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Eira fungerer som en rolig og naturlig del af hverdagen og skaber overblik uden at tilføje mere digital støj.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Armbåndet er designet med fokus på cirkularitet gennem genanvendt messing og et modulært design, hvor den teknologiske del kan udskiftes. </p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Dermed kombinerer Eira funktion, æstetik og bæredygtighed i én samlet løsning.</p>
+        </div>
+
+        <div>
+            <Image src={eiraFigur1} alt="illustration" class="mt-10 lg:mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="lg:mt-30 lg:grid lg:grid-cols-2 lg:gap-22">
+        <div class="lg:order-1">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Udviklingsprocessen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Udviklingen af Eira armbånd tager udgangspunkt i en brugercentreret tilgang med fokus på at forstå målgruppens behov og udfordringer. Gennem research og kvalitative interviews blev det tydeligt, at brugerne oplever digital støj og efterspørger løsninger, der skaber ro, overblik og tryghed.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Disse indsigter blev struktureret gennem et empathy map, hvor behov som kontrol, æstetik, fleksibilitet og tryghed dannede grundlag for konceptet og designvalgene.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Navnet Eira er inspireret af den nordiske gudinde Eir, som symboliserer helbredelse, omsorg og ro. Navnet er valgt som en del af konceptets identitet og understøtter ønsket om at skabe en mere menneskelig og tryg løsning.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">På baggrund af dette blev løsningen udviklet som et samspil mellem apotekets app og et intelligent armbånd, hvor teknologi integreres naturligt i brugerens hverdag.</p>
+        </div>
+
+        <div>
+            <Image src={eiraFigur2} alt="Illustration" class="mt-10 mb-20 lg:mt-10 lg:mb-48"></Image>
+        </div>
+    </article>
+
+
+
+    <article class="">
+        <div class="mt-10 -mx-10 lg:mt-0">
+            <Image src={eiraPrototype1} alt="Prototype af konceptet Eira armbånd"class="mb-10 lg:mb-32"></Image>
+            <div class="lg:grid">
+            <Image src={eiraPrototype2} alt="Prototype af konceptet Eira armbånd"class="mb-10 lg:mb-32 lg:w-6xl lg:justify-self-center"></Image>
+            </div>
+            <Image src={eiraPrototype3} alt="Prototype af konceptet Eira armbånd"class="lg:mb-60"></Image>
+        </div>
+    </article>
+
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
