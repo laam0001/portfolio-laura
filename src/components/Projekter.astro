@@ -10,7 +10,7 @@ import broleagger from '/public/broleaggerteamet.webp';
 import dhv from '/public/dhv.webp';
 ---
 
-<div class="relative">
+<div class="relative hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/eira">
         <Image src={eira} alt="Mockup af konceptet Eira armbånd" class="lg:h-[470px]"></Image> 
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[162px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">
@@ -20,7 +20,7 @@ import dhv from '/public/dhv.webp';
     </a>
 </div>
 
-<div class="relative mt-10 lg:mt-0 lg:h-[464px]">
+<div class="relative mt-10 lg:mt-0 lg:h-[464px] hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/skabtAfMig">
         <Image src={SkabtAfMig} alt="Mockup af Skabt af MIG hjemmeside" class="lg:h-[470px]"></Image> 
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[162px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">
@@ -30,7 +30,7 @@ import dhv from '/public/dhv.webp';
     </a>
 </div>
 
-<div class="relative mt-10 lg:mt-0 lg:h-[464px]">
+<div class="relative mt-10 lg:mt-0 lg:h-[464px] hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/danskeSpil">
         <Image src={danskeSpil} alt="Mockup af Danske Spil app" class="lg:h-[470px]"></Image> 
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[162px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">
@@ -40,7 +40,7 @@ import dhv from '/public/dhv.webp';
     </a>
 </div>
 
-<div class="relative mt-10 lg:mt-0 lg:h-[464px]">
+<div class="relative mt-10 lg:mt-0 lg:h-[464px] hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/girlTalk">
         <Image src={girlTalk} alt="Mockup af GirlTalk app" class="lg:h-[472px]"></Image>
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[155px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">
@@ -50,7 +50,7 @@ import dhv from '/public/dhv.webp';
     </a>
 </div>
 
-<div class="relative mt-10 lg:mt-0">
+<div class="relative mt-10 lg:mt-0 hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/bauhaus">
         <Image src={bauhaus} alt="Mockup af Bauhaus Schweiz app" class="lg:h-[470px]"></Image>
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[162px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">
@@ -60,7 +60,7 @@ import dhv from '/public/dhv.webp';
     </a>
 </div>
 
-<div class="relative mt-10 lg:mt-0">
+<div class="relative mt-10 lg:mt-0 hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/sacIt">
         <Image src={sacIt} alt="Mockup af Sac-It hjemmeside" class="lg:h-[472px]"></Image>
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[155px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[392px]">
@@ -70,7 +70,7 @@ import dhv from '/public/dhv.webp';
     </a>
 </div>
 
-<div class="relative mt-10 lg:mt-0">
+<div class="relative mt-10 lg:mt-0 hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/brolæggerTeamet">
         <Image src={broleagger} alt="Mockup af BrolæggerTeamets hjemmeside" class="lg:h-[470px]"></Image>
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[162px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[390px]">
@@ -80,7 +80,7 @@ import dhv from '/public/dhv.webp';
     </a>
 </div>
 
-<div class="relative mt-10 mb-10 lg:mt-0 lg:mb-20">
+<div class="relative mt-10 mb-10 lg:mt-0 lg:mb-20 hover:scale-x-105 hover:scale-y-105 transform">
     <a href="/dhv">
         <Image src={dhv} alt="Mockup af kampagne til Dansk Hestevæddeløb" class="lg:h-[472px]"></Image>
         <div class="bg-[#e3e1dfdb] text-[#434343] absolute top-[155px] w-full p-2 px-4 uppercase bebas-neue-regular lg:top-[392px]">
@@ -95,5 +95,9 @@ import dhv from '/public/dhv.webp';
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-style: normal;
+    }
+
+    .transform {
+        transition: 0.5s ease-in-out;
     }
 </style>
