@@ -28,8 +28,10 @@ import eiraPrototype3 from '/public/Eira-prototype3.webp';
             <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">Projektet tager udgangspunkt i et vigtigt sundhedsproblem og undersøger, hvordan man kan reducere digital støj og skabe en mere menneskelig brugeroplevelse.</p>
         </div>
 
+        <div class="zoomIn">
         <Image src={eiraMockup1} alt="Mockup af Eira armbånd koncept" class="mt-10 lg:hidden"></Image>
         <Image src={eiraMockup2} alt="Mockup af Eira armbånd koncept" class="mt-10 hidden lg:block lg:mb-26"></Image>
+        </div>
     </article>
 
     <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
@@ -74,11 +76,11 @@ import eiraPrototype3 from '/public/Eira-prototype3.webp';
 
     <article class="">
         <div class="mt-10 -mx-10 lg:mt-0">
-            <Image src={eiraPrototype1} alt="Prototype af konceptet Eira armbånd"class="mb-10 lg:mb-32"></Image>
+            <Image src={eiraPrototype1} alt="Prototype af konceptet Eira armbånd"class="mb-10 lg:mb-32 zoomIn2"></Image>
             <div class="lg:grid">
-            <Image src={eiraPrototype2} alt="Prototype af konceptet Eira armbånd"class="mb-10 lg:mb-32 lg:w-6xl lg:justify-self-center"></Image>
+            <Image src={eiraPrototype2} alt="Prototype af konceptet Eira armbånd"class="mb-10 lg:mb-32 lg:w-6xl lg:justify-self-center zoomIn3"></Image>
             </div>
-            <Image src={eiraPrototype3} alt="Prototype af konceptet Eira armbånd"class="lg:mb-60"></Image>
+            <Image src={eiraPrototype3} alt="Prototype af konceptet Eira armbånd"class="lg:mb-60 zoomIn4"></Image>
         </div>
     </article>
 
@@ -92,3 +94,27 @@ import eiraPrototype3 from '/public/Eira-prototype3.webp';
         font-style: normal;
     }
 </style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+    const zoomIn3 = document.querySelector(".zoomIn3");
+    const zoomIn4 = document.querySelector(".zoomIn4");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn3, () => {
+		zoomIn3.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn4, () => {
+		zoomIn4.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>

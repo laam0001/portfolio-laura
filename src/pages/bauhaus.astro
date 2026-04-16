@@ -24,8 +24,10 @@ import bhMockup from '/public/bh-prototype.webp';
             <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Bauhaus Schweiz ønskede en ny medarbejderapp, der effektivt understøtter intern kommunikation på tværs af deres afdelinger i hele landet og gør det nemmere for medarbejderne at holde sig forbundet i hverdagen.</p>
         </div>
 
+        <div class="zoomIn">
         <Image src={bhPrototype} alt="Prototype af Danske Spil app" class="mt-10 lg:hidden"></Image>
         <Image src={bhPrototype2} alt="Prototype af Danske Spil app" class="mt-10 hidden lg:block lg:mb-26"></Image>
+        </div>
     </article>
 
     <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
@@ -55,7 +57,7 @@ import bhMockup from '/public/bh-prototype.webp';
     </article>
 
     <article class="">
-        <div class="mt-10 -mx-10 lg:mt-0">
+        <div class="mt-10 -mx-10 lg:mt-0 zoomIn2">
             <Image src={bhMockup} alt="Mockup af app"class=""></Image>
         </div>
     </article>
@@ -69,3 +71,17 @@ import bhMockup from '/public/bh-prototype.webp';
         font-style: normal;
     }
 </style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>

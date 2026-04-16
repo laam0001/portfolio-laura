@@ -38,8 +38,10 @@ import skabtPrototype5 from '/public/SkabtPrototype5.webp';
             </div>
         </div>
 
+        <div class="zoomIn">
         <Image src={SkabtMockup2} alt="Mockup af Skabt af mig hjemmeside" class="mt-10 lg:hidden"></Image>
         <Image src={SkabtMockup1} alt="Mockup af Skabt af mig hjemmeside" class="mt-26 hidden lg:block lg:mb-26"></Image>
+        </div>
     </article>
 
     <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-26">
@@ -80,7 +82,7 @@ import skabtPrototype5 from '/public/SkabtPrototype5.webp';
 
     <article class="">
         <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px] text-center">Webshoppen</h3>
-        <div class="mt-6 -mx-10 lg:mt-10">
+        <div class="mt-6 -mx-10 lg:mt-10 zoomIn2">
             <Image src={skabtPrototype1} alt="Mockup af Skabt af MIG hjemmeside"class="lg:w-[1300px] lg:mx-10"></Image>
             <Image src={skabtPrototype2} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
             <Image src={skabtPrototype3} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
@@ -97,3 +99,17 @@ import skabtPrototype5 from '/public/SkabtPrototype5.webp';
         font-style: normal;
     }
 </style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>

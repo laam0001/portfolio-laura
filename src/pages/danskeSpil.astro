@@ -35,8 +35,10 @@ import dsMockup3 from '/public/dsMockup2.webp';
             </div>
         </div>
 
+        <div class="zoomIn">
         <Image src={dsPrototype} alt="Prototype af Danske Spil app" class="mt-10 lg:hidden"></Image>
         <Image src={dsPrototype2} alt="Prototype af Danske Spil app" class="mt-10 hidden lg:block lg:mb-26"></Image>
+        </div>
     </article>
 
     <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-26">
@@ -79,7 +81,7 @@ import dsMockup3 from '/public/dsMockup2.webp';
 
     <article class="">
         <h3 class="text-[#3F4345] text-2xl mt-20 lg:mt-32 lg:text-[32px] bebas-neue-regular lg:uppercase">Dine valg. Din grænse. Dit spil</h3>
-        <div class="">
+        <div class="zoomIn2">
             <Image src={dsMockup} alt="Mockup af app"class="lg:hidden"></Image>
             <Image src={dsMockup2} alt="Mockup af app" class="lg:hidden"></Image>
             <Image src={dsMockup3} alt="Mockup af app" class="hidden lg:block lg:mx-0"></Image>
@@ -95,3 +97,17 @@ import dsMockup3 from '/public/dsMockup2.webp';
         font-style: normal;
     }
 </style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>

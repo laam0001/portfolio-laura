@@ -33,8 +33,10 @@ import gtMockup from '/public/gt-prototype.webp';
             </div>
         </div>
 
+        <div class="zoomIn">
         <Image src={gtPrototype} alt="Mockup af GirlTalk app" class="mt-10 lg:hidden"></Image>
         <Image src={gtPrototype2} alt="Mockup af GirlTalk app" class="mt-26 hidden lg:block lg:mb-26"></Image>
+        </div>
     </article>
 
     <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-26">
@@ -83,7 +85,7 @@ import gtMockup from '/public/gt-prototype.webp';
     </article>
 
     <article class="">
-        <div class="mt-10">
+        <div class="mt-10 zoomIn2">
             <Image src={gtMockup} alt="Mockup af app"class=""></Image>
         </div>
     </article>
@@ -97,3 +99,17 @@ import gtMockup from '/public/gt-prototype.webp';
         font-style: normal;
     }
 </style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>

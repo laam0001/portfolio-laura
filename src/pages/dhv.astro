@@ -26,8 +26,10 @@ import dhvMockup from '/public/dhv-prototype.webp';
             <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">Projektet tog afsæt i en forældet digital tilstedeværelse og et behov for at modernisere sportens image.</p>
         </div>
 
+        <div class="zoomIn">
         <Image src={dhvPrototype} alt="Prototype af Dansk Hestevæddeløb kampagnesite" class="mt-10 lg:hidden"></Image>
         <Image src={dhvPrototype2} alt="Prototype af Dansk Hestevæddeløb kampagnesite" class="mt-10 hidden lg:block lg:mb-26"></Image>
+        </div>
     </article>
 
     <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
@@ -49,7 +51,7 @@ import dhvMockup from '/public/dhv-prototype.webp';
         </div>
     </article>
 
-    <article class="lg:mt-36 lg:grid lg:grid-cols-2 lg:gap-22">
+    <article class="lg:mt-32 lg:grid lg:grid-cols-2 lg:gap-22">
         <div class="lg:order-1">
         <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Udviklingsprocessen</h3>
             <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">VProjektet fulgte en Design Thinking-inspireret proces opdelt i 7 sprints:</p>
@@ -78,7 +80,7 @@ import dhvMockup from '/public/dhv-prototype.webp';
 
 
     <article class="">
-        <div class="mt-10 -mx-10 lg:mt-0">
+        <div class="mt-10 -mx-10 lg:mt-0 zoomIn2">
             <Image src={dhvMockup} alt="Mockup af Dansk Hestevæddeløb kampagnesite"class=""></Image>
         </div>
     </article>
@@ -96,3 +98,17 @@ import dhvMockup from '/public/dhv-prototype.webp';
         font-style: normal;
     }
 </style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>

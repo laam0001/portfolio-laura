@@ -27,8 +27,10 @@ import btMockup2 from '/public/bt-prototype2.webp';
             <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">De havde brug for en hjemmeside, der kort og præcist formidler deres ydelser og faglighed, på en måde, der er let at finde, nem at forstå og tilgængelig for alle.</p>
         </div>
 
+        <div class="zoomIn">
         <Image src={btPrototype} alt="Prototype af Brolæggerteamet hjemmeside" class="mt-10 lg:hidden"></Image>
         <Image src={btPrototype2} alt="Prototype af Brolæggerteamet hjemmeside" class="mt-10 hidden lg:block lg:mb-26"></Image>
+        </div>
     </article>
 
     <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
@@ -51,7 +53,7 @@ import btMockup2 from '/public/bt-prototype2.webp';
     </article>
 
     <article class="">
-        <div class="mt-20 -mx-10 lg:mt-32">
+        <div class="mt-20 -mx-10 lg:mt-32 zoomIn2">
             <Image src={btMockup} alt="Mockup af Sac-it hjemmeside"class="lg:w-[1300px] lg:mx-10"></Image>
             <Image src={btMockup2} alt="Mockup af Sac-it hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
         </div>
@@ -68,3 +70,17 @@ import btMockup2 from '/public/bt-prototype2.webp';
         font-style: normal;
     }
 </style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>
