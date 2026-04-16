@@ -19,8 +19,18 @@ import forsideimg from "/public/forside-img.svg";
 
 	<article id="sektion3">
 		<h3 class="pt-20 pb-4 text-3xl text-[#434343] lg:mx-10">Mine projekter</h3>
-		<div class="lg:grid lg:grid-cols-2 lg:gap-20 lg:mx-10">
+		<div class="lg:grid lg:grid-cols-2 lg:gap-20 lg:mx-10 zoomIn">
 		<Projekter></Projekter>
 		</div>
 	</article>
 </MainLayout>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-2s");
+	})
+
+</script>
