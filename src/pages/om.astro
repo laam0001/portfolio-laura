@@ -26,12 +26,12 @@ import laura from "/public/laura.webp";
         </div>
     
 
-        <div class="pt-10 lg:pt-16 lg:w-auto lg:mb-20"> 
+        <div class="pt-10 lg:pt-16 lg:w-auto lg:mb-20 fadeInRight"> 
             <Image src={laura} alt="Laura" class=""></Image>
         </div>
     </div>
 
-     <div class="text-[16px] text-[#5D5C5B] lg:mx-10">
+     <div class="text-[16px] text-[#5D5C5B] lg:mx-10 fadeInLeft">
         <h2 class="pt-20 pb-4 text-xl text-[#434343] lg:pt-0">Kompetencer</h3>
 
             <div class="lg:grid lg:grid-cols-2 max-w-[580px]">
@@ -53,3 +53,17 @@ import laura from "/public/laura.webp";
 
 </article>
 </MainLayout>
+
+<script>
+	import {inView} from "motion";
+	const fadeInRight = document.querySelector(".fadeInRight");
+    const fadeInLeft = document.querySelector(".fadeInLeft");
+
+	inView(fadeInRight, () => {
+		fadeInRight.classList.add("animate__animated", "animate__fadeInRight", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(fadeInLeft, () => {
+		fadeInLeft.classList.add("animate__animated", "animate__fadeInLeft", "animate__slower", "animation-duration-1s");
+    })
+</script>
