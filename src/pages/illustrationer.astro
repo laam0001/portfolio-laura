@@ -1,0 +1,78 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import illustration1 from "/public/illustration1.webp";
+import illustration2 from "/public/illustration2.webp";
+import illustration3 from "/public/illustration3.webp";
+import illustration4 from "/public/illustration4.webp";
+import illustration5 from "/public/illustration5.webp";
+import illustration6 from "/public/illustration6.webp";
+import illustration7 from "/public/illustration7.webp";
+import illustration8 from "/public/illustration8.webp";
+import illustration9 from "/public/illustration9.webp";
+import illustration10 from "/public/illustration10.webp";
+import illustration11 from "/public/illustration11.webp";
+import illustration12 from "/public/illustration12.webp";
+import illustration13 from "/public/illustration13.webp";
+import illustration14 from "/public/illustration14.webp";
+import illustration15 from "/public/illustration15.webp";
+---
+
+<MainLayout title="Mine illustrationer">
+<article class="lg:mr-14 lg:ml-4 pb-10">
+    <h3 class="pt-20 pb-4 text-3xl text-[#434343] lg:pt-0 text-center">Mine illustrationer</h3>
+
+    <div class="mt-4lg:mt-10 row">
+        <div class="column">
+            <Image src={illustration1} alt="Laura" class="m-0 lg:m-6"></Image>
+            <Image src={illustration5} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration8} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration11} alt="Laura" class="m-0 lg:m-6"></Image>
+        </div>
+            
+        <div class="column">
+            <Image src={illustration2} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration9} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration12} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration14} alt="Laura" class="m-0 lg:m-6"></Image> 
+        </div>
+
+
+        <div class="column">
+            <Image src={illustration3} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration6} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration10} alt="Laura" class="m-0 lg:m-6"></Image>
+            <Image src={illustration13} alt="Laura" class="m-0 lg:m-6"></Image> 
+        </div> 
+
+        <div class="column">
+            <Image src={illustration4} alt="Laura" class="m-0 lg:m-6"></Image>
+            <Image src={illustration7} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration15} alt="Laura" class="m-0 lg:m-6"></Image> 
+        </div>
+    </div>
+    
+</article>
+</MainLayout>
+
+<style>
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+</style>
