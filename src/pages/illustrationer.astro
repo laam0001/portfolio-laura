@@ -22,33 +22,33 @@ import illustration15 from "/public/illustration15.webp";
 <article class="lg:mr-14 lg:ml-4 pb-10 lg:pb-40">
     <h3 class="pt-20 pb-4 lg:pb-16 text-3xl text-[#434343] lg:pt-0 text-center">Mine illustrationer</h3>
 
-    <div class="mt-4 row">
+    <div class="mt-4 row mangeelementerinview">
         <div class="column">
-            <Image src={illustration1} alt="Laura" class="m-0 lg:m-6"></Image>
-            <Image src={illustration5} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration8} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration11} alt="Laura" class="m-0 lg:m-6"></Image>
+            <Image src={illustration1} alt="Laura" class="m-0 lg:m-6 mangeelementer1"></Image>
+            <Image src={illustration5} alt="Laura" class="m-0 lg:m-6 mangeelementer2"></Image> 
+            <Image src={illustration8} alt="Laura" class="m-0 lg:m-6 mangeelementer3"></Image> 
+            <Image src={illustration11} alt="Laura" class="m-0 lg:m-6 mangeelementer4"></Image>
         </div>
             
         <div class="column">
-            <Image src={illustration2} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration9} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration12} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration14} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration2} alt="Laura" class="m-0 lg:m-6 mangeelementer5"></Image> 
+            <Image src={illustration9} alt="Laura" class="m-0 lg:m-6 mangeelementer6"></Image> 
+            <Image src={illustration12} alt="Laura" class="m-0 lg:m-6 mangeelementer7"></Image> 
+            <Image src={illustration14} alt="Laura" class="m-0 lg:m-6 mangeelementer8"></Image> 
         </div>
 
 
         <div class="column">
-            <Image src={illustration3} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration6} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration10} alt="Laura" class="m-0 lg:m-6"></Image>
-            <Image src={illustration13} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration3} alt="Laura" class="m-0 lg:m-6 mangeelementer9"></Image> 
+            <Image src={illustration6} alt="Laura" class="m-0 lg:m-6 mangeelementer10"></Image> 
+            <Image src={illustration10} alt="Laura" class="m-0 lg:m-6 mangeelementer11"></Image>
+            <Image src={illustration13} alt="Laura" class="m-0 lg:m-6 mangeelementer12"></Image> 
         </div> 
 
         <div class="column">
-            <Image src={illustration4} alt="Laura" class="m-0 lg:m-6"></Image>
-            <Image src={illustration7} alt="Laura" class="m-0 lg:m-6"></Image> 
-            <Image src={illustration15} alt="Laura" class="m-0 lg:m-6"></Image> 
+            <Image src={illustration4} alt="Laura" class="m-0 lg:m-6 mangeelementer13"></Image>
+            <Image src={illustration7} alt="Laura" class="m-0 lg:m-6 mangeelementer14"></Image> 
+            <Image src={illustration15} alt="Laura" class="m-0 lg:m-6 mangeelementer15"></Image> 
         </div>
     </div>
     
@@ -76,3 +76,43 @@ import illustration15 from "/public/illustration15.webp";
 }
 
 </style>
+
+<script>
+import {inView} from "motion";
+import {animate} from "motion";
+    inView( ".mangeelementerinview", () =>{
+	animate( ".mangeelementer1", { x: [-2000, 0 ], y: [-50, 0 ] }, { duration: 1 }) 
+	animate( ".mangeelementer2", { x: [-1500, 0 ], y: [-100, 0 ] }, { duration: 3 })
+	animate( ".mangeelementer3", { x: [-1000, 0 ], y: [-150, 0 ] }, { duration: 3 })
+	animate( ".mangeelementer4", { x: [1750, 0 ] }, { duration: 2 })
+	animate( ".mangeelementer5", { x: [-2000, 0 ], y: [-100, 0 ]  }, { duration: 1 })
+	animate( ".mangeelementer6", { x: [2000, 0 ] }, { duration: 2 })
+	animate( ".mangeelementer7", { x: [1500, 0 ], y: [50, 0 ] }, { duration: 3 })
+	animate( ".mangeelementer8", { x: [1000, 0 ], y: [150, 0 ] }, { duration: 2 })
+	animate( ".mangeelementer9", { x: [1500, 0 ], y: [0, 0 ] }, { duration: 1 })
+	animate( ".mangeelementer10", { x: [2000, 0 ] , y: [-50, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer11", { x: [-2000, 0 ] , y: [-100, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer12", { x: [1750, 0 ] , y: [-150, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer13", { x: [1000, 0 ]} , { duration: 2 })
+    animate( ".mangeelementer14", { x: [2000, 0 ] , y: [50, 0 ] }, { duration: 2 })
+    animate( ".mangeelementer15", { x: [-1000, 0 ] , y: [150, 0 ] }, { duration: 2 })
+
+	return () => {
+		animate( ".mangeelementer1", { x: [-2000, 0 ], y: [-50, 0 ] }, { duration: 1 }) 
+		animate( ".mangeelementer2", { x: [-1500, 0 ], y: [-100, 0 ] }, { duration: 3 })
+		animate( ".mangeelementer3", { x: [-1000, 0 ], y: [-150, 0 ] }, { duration: 3 })
+		animate( ".mangeelementer4", { x: [1750, 0 ] }, { duration: 2 })
+		animate( ".mangeelementer5", { x: [-2000, 0 ], y: [-100, 0 ]  }, { duration: 1 })
+		animate( ".mangeelementer6", { x: [2000, 0 ] }, { duration: 2 })
+		animate( ".mangeelementer7", { x: [1500, 0 ], y: [50, 0 ] }, { duration: 3 })
+		animate( ".mangeelementer8", { x: [1000, 0 ], y: [150, 0 ] }, { duration: 2 })
+		animate( ".mangeelementer9", { x: [1500, 0 ], y: [0, 0 ] }, { duration: 1 })
+		animate( ".mangeelementer10", { x: [2000, 0 ] , y: [-50, 0 ] }, { duration: 2 })
+        animate( ".mangeelementer11", { x: [-2000, 0 ] , y: [-100, 0 ] }, { duration: 2 })
+        animate( ".mangeelementer12", { x: [1750, 0 ] , y: [-150, 0 ] }, { duration: 2 })
+        animate( ".mangeelementer13", { x: [1000, 0 ]}, { duration: 2 })
+        animate( ".mangeelementer14", { x: [2000, 0 ] , y: [50, 0 ] }, { duration: 2 })
+        animate( ".mangeelementer15", { x: [-1000, 0 ] , y: [150, 0 ] }, { duration: 2 })
+   		}
+  	})
+</script>
