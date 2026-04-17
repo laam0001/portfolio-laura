@@ -1,0 +1,118 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import svaneMobile from '/public/svane-mobile.webp';
+import svaneDesktop from '/public/svane-desktop.webp';
+import svaneMockup1 from '/public/svaneMockup-mobile.webp';
+import svaneMockup2 from '/public/svaneMockup-desktop.webp';
+import svaneMoodboard from '/public/svaneMoodboard.webp';
+import svaneFigur2 from '/public/svaneFigur2.webp';
+import svanePrototype1 from '/public/svane-prototype1.webp';
+import svanePrototype2 from '/public/svane-prototype2.webp';
+import svanePrototype3 from '/public/svane-prototype3.webp';
+import svanePrototype4 from '/public/svane-prototype4.webp';
+import svanePrototype5 from '/public/svane-prototype5.webp';
+import svanePrototype6 from '/public/svane-prototype6.webp';
+import svanePrototype7 from '/public/svane-prototype7.webp';
+---
+<MainLayout title="Svane font">
+    <div class="lg:mx-10">
+    <article class="mt-20 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">KEA</h1>
+        <h2 class="text-3xl text-[#434343] uppercase lg:text-5xl">Svane font</h2>
+
+        <Image class="mt-10 lg:hidden" src={svaneMobile} alt="Svane font"></Image>
+        <Image class="mt-10 hidden lg:block" src={svaneDesktop} alt="Svane font"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:text-center lg:mx-72 lg:mb-26">
+            <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Projektets formål</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Formålet med projektet var at udvikle en typografisk løsning, hvor æstetik og symbolik smelter sammen. .</p>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px] lg:mt-6">Med udgangspunkt i svanen som form og betydning blev målet at skabe en visuel identitet, der både er genkendelig og meningsfuld.</p>
+        </div>
+
+        <div class="zoomIn">
+        <Image src={svaneMockup1} alt="Mockup af svane font" class="mt-10 lg:hidden"></Image>
+        <Image src={svaneMockup2} alt="Mockup af svane font" class="mt-10 hidden lg:block lg:mb-26"></Image>
+        </div>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-0">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Idé og inspiration</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Typografien tager udgangspunkt i svanen som visuelt og symbolsk element. Typografien er opbygget af svanens former, bevægelser og organiske linjer, hvilket skaber et blødt og levende udtryk.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Svanen er Danmarks nationalfugl og symboliserer renhed, styrke og skønhed. Samtidig refererer den til fællesskab gennem dens bevægelse i flok, hvilket giver typografien en ekstra fortælling og dybde.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Inspirationen stammer fra research af eksisterende typografier og visuelle udtryk, hvor særligt organiske former og naturens bevægelser var centrale. </p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Moodboardet dannede grundlag for farver, former og stemning og fungerede som et visuelt pejlemærke gennem hele processen.</p>
+        </div>
+
+        <div>
+            <Image src={svaneMoodboard} alt="Moodboard af svane font" class="mt-10 lg:mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-22">
+        <div class="lg:order-1">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Udviklingsprocessen</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Projektet er udviklet gennem en iterativ designproces med fokus på research, formgivning og visuel afprøvning. </p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Med udgangspunkt i visuel inspiration og moodboards blev retning, farver og stemning defineret, hvorefter typografien blev udviklet gennem skitser, komposition og eksperimenter med form og udtryk. </p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Løbende afprøvning i forskellige farvekombinationer og kontekster gjorde det muligt at omsætte et abstrakt koncept til en konkret og sammenhængende visuel løsning.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Resultatet er en typografi, der fungerer både som identitet og visuelt element. Den kan anvendes fleksibelt på tværs af flader og udtryk, fra digitale løsninger til collager og grafiske kompositioner, og balancerer det enkle med et mere legende og fortællende udtryk.</p>
+        </div>
+
+        <div>
+            <Image src={svaneFigur2} alt="Illustration" class="mt-10 mb-20 lg:mt-10 lg:mb-48"></Image>
+        </div>
+    </article>
+
+
+
+    <article class="">
+        <div class="mt-10 -mx-10 lg:mt-0 zoomIn2">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <Image src={svanePrototype1} alt="Prototype af fonten svane"class=""></Image>
+                <Image src={svanePrototype2} alt="Prototype af fonten svane"class=""></Image>
+                <Image src={svanePrototype3} alt="Prototype af fonten svane"class=""></Image>
+                <Image src={svanePrototype4} alt="Prototype af fonten svane"class=""></Image>
+                <Image src={svanePrototype5} alt="Prototype af fonten svane"class=""></Image>
+                <Image src={svanePrototype6} alt="Prototype af fonten svane"class=""></Image>
+            </div>
+
+            <Image src={svanePrototype7} alt="Prototype af fonten svane"class="mt-14 lg:mt-26 lg:mb-60"></Image>
+            
+        </div>
+    </article>
+
+    </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+    const zoomIn3 = document.querySelector(".zoomIn3");
+    const zoomIn4 = document.querySelector(".zoomIn4");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>
