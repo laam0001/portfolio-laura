@@ -1,0 +1,121 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import CoMobile from '/public/Co-mobile.webp';
+import CoDesktop from '/public/Co-desktop.webp';
+import CoMockup1 from '/public/CoMockup-desktop.webp';
+import CoMockup2 from '/public/CoMockup-Mobile.webp';
+import CoFigur1 from '/public/Co-Figur1.webp';
+import CoFigur2 from '/public/Co-Figur2.svg';
+import CoPrototype1 from '/public/Co-Prototype1.webp';
+import CoPrototype2 from '/public/Co-Prototype2.webp';
+import CoPrototype3 from '/public/Co-Prototype3.webp';
+
+---
+<MainLayout title="CO2 Invest">
+    <div class="lg:mx-10">
+    <article class="mt-20 bebas-neue-regular lg:-mt-8 ">
+        <h1 class="text-xl text-[#777575] lg:text-2xl">KEA</h1>
+        <h2 class="text-4xl text-[#434343] uppercase lg:text-5xl">CO2 Invest</h2>
+
+        <Image class="mt-10 lg:hidden" src={CoMobile} alt="Co2 Invest hjemmeside"></Image>
+        <Image class="mt-10 hidden lg:block" src={CoDesktop} alt="Co2 Invest hjemmesidee"></Image>
+    </article>
+
+    <article class="mt-10 lg:mt-26">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-28">
+            <div>
+                <h3 class="text-[#3F4345] text-xl lg:text-[24px]">Konceptets formål</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Formålet med projektet var at udvikle en digital løsning, der synliggør værdien af genfremstillede støbeplader og gør det nemt for byggebranchen at vælge en mere cirkulær løsning.</p>
+                <p class="text-[#76726D] mt-4 lg:text-[18px]">Projektet tager udgangspunkt i en central udfordring: at brugte støbeplader ofte ender som affald, selvom de rummer både økonomisk og miljømæssig værdi. Samtidig mangler branchen dokumentation og overblik, hvilket gør det svært at træffe bæredygtige valg.</p>
+            </div>
+
+            <div>
+                <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Problemformulering</h3>
+                <p class="text-[#76726D] text-[16px] mt-2 lg:mb-26 lg:text-[18px]">Hvordan kan vi udvikle et system for CO₂Invest, der integreres i byggepladsens eksisterende arbejdsgange, så brugte støbeplader omdannes til en dokumenterbar værdi i form af CO₂-besparelser?</p>
+            </div>
+        </div>
+
+        <div class="zoomIn">
+        <Image src={CoMockup2} alt="Co2 Invest hjemmeside" class="mt-10 lg:hidden"></Image>
+        <Image src={CoMockup1} alt="Co2 Invest hjemmeside" class="mt-26 hidden lg:block lg:mb-26"></Image>
+        </div>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22 lg:mb-26">
+        <div>
+            <h3 class="text-[#3F4345] text-xl mt-10 lg:mt-0 lg:text-[24px]">Løsningen - Det digitale pladeværksted</h3>
+            <p class="text-[#76726D] text-[16px] mt-2 lg:text-[18px]">Løsningen er en digital platform, der kobler eksisterende arbejdsgange på byggepladsen med data, dokumentation og cirkulær værdiskabelse.</p>
+
+            <h4 class="text-[#3F4345] text-[16px] mt-6 lg:text-[18px]">Konceptet gør det muligt at:</h4>
+
+            <ul class="text-[#76726D] lg:text-[18px] list-disc mx-4 mt-4">
+                <li>Registrere brugte støbeplader automatisk via sensorteknologi</li>
+                <li class="mt-4">Visualisere CO₂-besparelser og økonomisk værdi i et dashboard</li>
+                <li class="mt-4">Skabe overblik over lager, logistik og kontrakter</li>
+                <li class="mt-4">Integrere data direkte i virksomhedens eksisterende systemer</li>
+            </ul>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Platformen bygger på et samarbejde med LASSTEC-sensorer, som måler vægten af støbeplader i containere. Data sendes automatisk til systemet, hvor det omsættes til dokumenterbar værdi uden at ændre arbejdsgange.</p>
+
+            <p class="text-[#76726D] lg:text-[18px] mt-4">Løsningen tager dermed udgangspunkt i princippet om “impact without change”, hvor nye løsninger implementeres uden at skabe friktion i praksis.</p>
+        </div>
+
+        <div>
+            <Image src={CoFigur1} alt="Cikularitet i forhold til støbeplader" class="mt-10 lg:mt-10"></Image>
+        </div>
+    </article>
+
+    <article class="lg:grid lg:grid-cols-2 lg:gap-22">
+        <div class="lg:order-1">
+        <h3 class="text-[#3F4345] text-xl mt-10 lg:text-[24px]">Udviklingsprocessen</h3>
+
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Projektet er udviklet med udgangspunkt i Double Diamond og en hypotetisk-deduktiv tilgang, hvor desk research og semistrukturerede interviews gav indsigt i lovgivning, arbejdsgange og barrierer.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Disse blev omsat gennem empathy maps, personaer, Business Model Canvas og Service Blueprint for at koble brugerbehov med forretningsværdi. En central indsigt var, at løsningen skal være enkel, dokumenterbar og integreret i eksisterende processer.</p>
+        
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Konceptet skaber værdi på flere niveauer. For brugeren betyder det minimal ekstra arbejdsbyrde og et klart overblik over data og processer. For virksomheden muliggør det dokumenterbare CO₂-besparelser, der kan anvendes i udbud og ESG-rapportering.</p>
+
+            <p class="text-[#76726D] text-[16px] mt-6 lg:text-[18px]">Samtidig bidrager løsningen til samfundet ved at reducere affald og understøtte en mere cirkulær byggebranche. Ved at gøre affald til en dokumenterbar ressource transformerer konceptet støbeplader fra en udgift til en investering.</p>
+        </div>
+
+        <div>
+            <Image src={CoFigur2} alt="Double diamond" class="mt-10 mb-20 lg:mb-30"></Image>
+        </div>
+    </article>
+
+    <article class="">
+        <div class="mt-6 -mx-10 lg:mt-40 zoomIn2">
+            <Image src={CoPrototype1} alt="Mockup af Skabt af MIG hjemmeside"class="lg:w-[1300px] lg:mx-10"></Image>
+            <Image src={CoPrototype2} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
+            <Image src={CoPrototype3} alt="Mockup af Skabt af MIG hjemmeside"class="mt-6 lg:w-[1300px] lg:mx-10 lg:mt-20"></Image>
+        </div>
+    </article>
+
+    <div class="lg:pb-20">
+        <h4 class="text-lg text-center lg:text-2xl mt-10 lg:mt-20">Se løsningen her:</h4>
+        <a class="text-[#76726D] flex justify-center lg:text-lg" href="https://option-jet-95067909.figma.site/">https://detdigitalepladeværksted.dk</a>
+        </div>
+</MainLayout>
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+
+<script>
+	import {inView} from "motion";
+	const zoomIn = document.querySelector(".zoomIn");
+    const zoomIn2 = document.querySelector(".zoomIn2");
+
+	inView(zoomIn, () => {
+		zoomIn.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+
+    inView(zoomIn2, () => {
+		zoomIn2.classList.add("animate__animated", "animate__zoomIn", "animate__slower", "animation-duration-1s");
+    })
+</script>
